@@ -21,4 +21,7 @@ fun main(args: Array<String>) {
     groupedEvents.forEach { (daypart, events) ->
         println("$daypart: ${events.size} events")
     }
+
+    //Task 6
+    println("Last event of the day: ${events.last().title}")
 }
