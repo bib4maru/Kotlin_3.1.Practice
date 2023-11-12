@@ -15,4 +15,10 @@ fun main(args: Array<String>) {
     //Task 4
     val shortEvents = events.filter { it.durationInMinutes < 60 }
     println("You have ${shortEvents.size} short events.")
+
+    //Task 5
+    val groupedEvents = events.groupBy { it.daypart }
+    groupedEvents.forEach { (daypart, events) ->
+        println("$daypart: ${events.size} events")
+    }
 }
